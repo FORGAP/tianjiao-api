@@ -16,6 +16,22 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@configs/*": ["./src/configs/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@packages/*": ["./src/packages/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@pipes/*": ["./src/pipes/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@guards/*": ["./src/guards/*"],
+      "@services/*": ["./src/services/*"],
+      "@dtos/*": ["./src/dtos/*"],
+      "@models/*": ["./src/models/*"],
+      "@decorators/*": ["./src/decorators/*"],
+      "@interceptors/*": ["./src/interceptors/*"],
+      "@filters/*": ["./src/filters/*"]
+    }
   }
 }
