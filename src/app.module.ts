@@ -8,6 +8,8 @@ import { AppService } from './app.service';
 import { TestModule } from './modules/test/test.module';
 import { DbModule } from './db.module';
 import { SequelizeModule } from '@nestjs/sequelize';
+import { AdminModule } from './modules/admin/admin.module';
+import { OpModule } from './modules/op/op.module';
 
 @Module({
   imports: [
@@ -135,6 +137,8 @@ import { SequelizeModule } from '@nestjs/sequelize';
         };
       },
     }),
+    AdminModule,
+    OpModule,
   ],
   controllers: [AppController],
   providers: [AppService],

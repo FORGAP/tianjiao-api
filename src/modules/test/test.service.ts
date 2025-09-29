@@ -1,12 +1,12 @@
-import { TUser } from '@models/index';
+import { TAdminUser } from '@models/index';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 
 @Injectable()
 export class TestService {
   constructor(
-    @InjectModel(TUser)
-    private readonly tUser: typeof TUser,
+    @InjectModel(TAdminUser)
+    private readonly tUser: typeof TAdminUser,
   ) {}
 
   async getUsers() {

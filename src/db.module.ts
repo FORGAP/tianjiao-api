@@ -1,7 +1,10 @@
 import { Module, Global } from '@nestjs/common';
 import { InjectModel, SequelizeModule } from '@nestjs/sequelize';
 import {
-  TUser,
+  TAdminOrg,
+  TAdminUser,
+  TAdminUserCustomAttribute,
+  TSapPart,
   // TUserLogin,
   // TUserOplog,
   // TUserRight,
@@ -14,7 +17,10 @@ import {
 @Module({
   imports: [
     SequelizeModule.forFeature([
-      TUser,
+      TAdminOrg,
+      TAdminUser,
+      TAdminUserCustomAttribute,
+      TSapPart,
       // TUserLogin,
       // TUserOplog,
       // TUserRight,
