@@ -1,4 +1,5 @@
 import { join, resolve } from 'path';
+import app_config from '@configs/app';
 import databse_config from '@configs/mssql';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { LoggerMiddleware } from '@middlewares/logger';
@@ -14,7 +15,7 @@ import { OpModule } from './modules/op/op.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      load: [databse_config],
+      load: [app_config, databse_config],
     }),
     TestModule,
     DbModule,
